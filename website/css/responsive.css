@@ -1,0 +1,245 @@
+/* ==========================================================================
+   MOOS Agency — Responsive Breakpoints, Reduced Motion & Print
+   ========================================================================== */
+
+@media (max-width: 68.75rem) {
+  .header-inner {
+    gap: 1rem;
+  }
+
+  .desktop-nav {
+    gap: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 6.2vw, 5.25rem);
+  }
+}
+
+@media (max-width: 56.25rem) {
+  .header-inner {
+    min-height: 4.75rem;
+  }
+
+  .brand {
+    width: 7.75rem;
+  }
+
+  .desktop-nav,
+  .header-cta {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .hero-title-offset {
+    padding-left: 0;
+  }
+
+  .hero-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .split-section,
+  .manifesto-grid,
+  .about-hero-layout,
+  .portfolio-hero-top,
+  .contact-showcase {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mood-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mood-item-wide {
+    grid-column: 1 / -1;
+  }
+
+  .contact-guide-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .closing-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .closing-action {
+    width: 100%;
+    max-width: 26rem;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-nav {
+    grid-column: 1 / -1;
+    justify-self: start;
+    grid-template-columns: repeat(4, auto);
+    gap: 0.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  :root {
+    --space-section: 4rem;
+    --space-section-sm: 3rem;
+  }
+
+  .hero {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-kicker {
+    margin-bottom: 2.25rem;
+  }
+
+  .hero-number {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: clamp(2.15rem, 10vw, 3.5rem);
+    letter-spacing: -0.055em;
+    line-height: 1.12;
+  }
+
+  .hero-intro {
+    padding-top: 2rem;
+  }
+
+  .hero-discover {
+    width: 100%;
+  }
+
+  .highlight-grid,
+  .project-grid,
+  .archive-grid,
+  .team-grid,
+  .mood-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .mood-item-wide {
+    grid-column: auto;
+  }
+
+  .more-events {
+    padding: 1.25rem;
+  }
+
+  .more-events-label {
+    width: 100%;
+  }
+
+  .portfolio-hero-nav {
+    padding: 1rem 1.25rem;
+  }
+
+  .closing-meta-aside {
+    display: none;
+  }
+
+  .footer-top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+
+  .footer-nav {
+    grid-column: 1;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.25rem 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .photo-open {
+    bottom: 0.875rem;
+    right: 0.875rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (max-width: 24rem) {
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: -0.05em;
+  }
+
+  .about-title,
+  .portfolio-title,
+  .contact-title,
+  .closing-title {
+    font-size: 2.35rem;
+  }
+
+  .contact-panel {
+    padding: 1.375rem;
+  }
+
+  .contact-email {
+    font-size: 1.125rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media print {
+  .site-header {
+    position: static;
+    box-shadow: none;
+  }
+
+  .mobile-menu,
+  .desktop-nav,
+  .header-cta,
+  .lightbox {
+    display: none !important;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .section,
+  .closing {
+    padding-block: 2rem;
+  }
+
+  .project-grid,
+  .highlight-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

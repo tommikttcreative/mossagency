@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Po nasazení na produkční doménu doplňte řádek:
+# Sitemap: https://vase-domena.cz/sitemap.xml
