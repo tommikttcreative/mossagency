@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /scraped-content/
+# Po doplnění skutečné produkční domény přidejte absolutní Sitemap URL.
